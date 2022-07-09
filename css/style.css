@@ -1,0 +1,365 @@
+/************************ 
+    Google fonts Popins
+*************************/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+
+/************************ 
+    Webpage Global CSS
+*************************/
+*{
+    margin: 0;
+    padding: 0;
+}
+a{
+    text-decoration: none;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+}
+
+
+/************************ 
+   Header section CSS
+*************************/
+.main-header{
+    padding: 30px 0;
+}
+.main-header img{
+    width: 200px;
+    cursor: pointer;
+}
+.main-header ul{
+    display: flex;
+    margin-top: 16px;
+    padding: 0;
+}
+.main-header ul li{
+    text-decoration: none;
+    margin-right: 60px;
+    list-style: none;
+}
+.main-header ul li a{
+    color: #717171;
+    font-size: 18px;
+    font-weight: 600;
+}
+.main-header ul li a:hover{
+    color: #924f35;
+    border-bottom: 2px solid #924f35;
+}
+.main-header button{
+    border: none;
+    font-size: 16px;
+    background-color: #924f35;
+    color: white;
+    margin-left: 20px;
+    padding: 12px 60px 12px 40px;
+    border-radius: 30px;
+    transition: all 0.3s ease-in-out;
+}
+.main-header button:hover{
+    background-color: #b16a4e;
+    right: 30px;
+}
+.header-login{
+    position: relative;
+    text-align: right;
+}
+.main-header .header-search{
+    margin: 20px 0;
+    cursor: pointer;
+    border-right: 3px solid #717171;
+    padding-right: 16px;
+    transition: all .3s ease-in-out;
+}
+.main-header .header-search:hover{
+    color: #924f35;
+    border-color: #924f35;
+}
+.main-header .login-arrow{
+    cursor: pointer;
+    position: absolute;
+    top: 20px;
+    right: 40px;
+    color: white;
+    transition: all .3s ease-in-out;
+}
+.main-header .login-arrow:hover{
+    right: 30px;
+}
+
+
+/************************ 
+   Hero section CSS
+*************************/
+.hero-section{
+    background-color: #f4f1ef;
+    padding: 175px 0;    
+}
+.hero-section h1{
+    font-size: 48px;
+    font-weight: 600;
+}
+.hero-section form .hero-input{
+    font-size: 20px;
+    font-weight: 500;
+    width: 360px;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 30px;
+    border: 1px solid #924f35;
+    margin: 20px 0;
+}
+.hero-section .btn-hero-submit{
+    border: 2.5px solid #924f35;
+    font-size: 18px;
+    background-color: transparent;
+    color: #924f35;
+    margin: 20px 0;
+    padding: 12px 40px;
+    border-radius: 35px;
+    transition: all 0.3s ease-in-out;
+}
+.hero-section .btn-hero-submit:hover{
+    background-color: #924f35;
+    color: white;
+}
+
+
+/************************ 
+    Features-area CSS
+*************************/
+.features-area{
+    margin: 75px 0;
+}
+.feature-content{
+    text-align: center;
+}
+.feature-content img{
+    margin-bottom: 40px;
+}
+.feature-content h2{
+    font-size: 36px;
+    font-weight: 600;
+    margin: 0 0 20px;
+}
+.feature-content p{
+    font-weight: 600;
+    letter-spacing: .6px;
+}
+
+
+/************************ 
+    Experience Section CSS
+*************************/
+.experience-area{ 
+    background-color: #3d3d3d;
+    padding: 100px 0;
+}
+.experience-area h2{
+    font-size: 42px;
+    line-height: 56px; 
+}
+.experience-area{
+    color: white;
+    background-color: #3d3d3d; 
+}
+.experience-area ul{
+    padding: 0;
+}
+.experience-area ul li{
+    list-style: none;
+}
+.experience-area ul li i{
+    background-color:  #924f35;
+    color: white;
+    height: 26px;
+    width: 26px;
+    text-align: center;
+    line-height: 24px; 
+    border-radius: 50%;
+    margin: 10px 10px 10px 0;
+}
+.experience-area img{
+    float: right;
+}
+
+
+/************************ 
+    Subscription CSS
+*************************/
+.subscription-area{
+    margin: 75px 0;
+}
+.subscription-bg{
+    background: url(../assets/images/subscripton-bg.png) no-repeat center top;
+    background-size: cover;
+    padding: 150px 0;
+    border-radius: 15px;
+    text-align: center;
+}
+.subscription-bg h2{
+    font-size: 48px;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+.subscription-bg form .contact-info{
+    font-size: 20px;
+    border: none;
+    width: 100%;
+    margin: 5px;
+    padding: 15px 0 15px 20px;
+    border-radius: 30px; 
+    border: 1px solid #924f35;
+}
+.mail-box{
+    position: relative;
+}
+.mail-box .btn-submit{
+    position: absolute;
+    border: none;
+    font-size: 20px;
+    top: 10px;
+    right: 0px;
+    background-color: #924f35;
+    color: white;
+    padding: 10px 30px;
+    border-radius: 30px;
+    transition: all 0.3s ease-in-out;
+}
+.mail-box .btn-submit:hover{
+    background-color: #b16a4e;
+}
+
+
+/************************ 
+    Footer CSS
+*************************/
+footer{
+    margin: 75px 0 0;
+}
+footer h3{
+    font-size: 22px;
+    font-weight: 600;
+    color: #3d3d3d;
+    margin-bottom: 20px;
+}
+footer p{
+    font-size: 16px;
+    margin-bottom: 20px;
+    font-weight: 500;
+    line-height: 26px;
+}
+/* Social icon css */
+.social-icon ul{
+    padding: 0;
+}
+.social-icon ul li{
+    list-style: none;
+    display: inline;
+    margin: 0 3px;
+}
+.social-icon ul li a i{
+    background-color: #3d3d3d;
+    color: white;
+    height: 36px;
+    width: 36px;
+    line-height: 36px;
+    text-align: center;
+    border-radius: 50%;
+    transition: all 0.3s ease-in-out; 
+}
+.social-icon ul li a i:hover{
+    background-color: #924f35;
+}
+/* Second Widget css */
+.links ul{
+    padding: 0;
+}
+.links ul li{
+    list-style: none;
+    line-height: 32px;
+}
+.links ul li a{
+    color: #3d3d3d;
+    font-weight: 500;
+    transition: all 0.3s ease-in-out;  
+}
+.links ul li a:hover{
+    font-weight: 500;
+    margin-left: 5px;
+    color: #924f35;
+}
+/* Contact us css */
+.contact-info ul{
+    padding: 0;
+}
+.contact-info ul li{
+    list-style: none;
+}
+.contact-info ul li a{
+    color: #3d3d3d;
+    font-weight: 500;
+    margin-left: 8px;
+    font-size: 16px;
+    line-height: 32px;
+    transition: all 0.3s ease-in-out;
+}
+.contact-info ul li a:hover{
+    color: #924f35;
+    margin-left: 12px;  
+}
+/* Copyright Area */
+.footer-bottom{
+    padding: 0;
+}
+.copyright-area{
+    margin: 50px 0 30px;
+    border-top: 3px solid #bebdbd;
+    padding: 40px 0 0;
+}
+.copyright-area img{
+    width: 200px;
+}
+.copyright-area p{
+    color: #3d3d3d;
+    margin-right: none;
+    margin-top: 10px;
+    padding: 0;
+    text-align: right;
+}
+
+
+
+/***********************
+    Mobile Responsive
+************************/
+@media (min-width: 320px) and (max-width: 576px){
+
+    .main-header{padding: 40px 0 25px;}
+    .main-header img{width: 180px;}
+    .main-header ul{line-height: 20px; margin-top: -39px; margin-right: -58px; text-align: right; flex-direction: column;}
+    .main-header ul li a{font-size: 16px;}
+    .hero-section{ text-align: center; padding: 140px 0;}
+    .hero-section h1{font-size: 36px;}
+    .hero-section form .hero-input{margin: 14px 0px 0px; width: 320px; padding: 10px 20px;}
+    .hero-section .btn-hero-submit{font-size: 16px; margin: 10px 0; padding: 10px 30px;}
+    .feature-content img{width: 40%; margin: 40px 0 10px;}
+    .feature-content h2{ font-size: 36; margin: 0 0 10px;}
+    .experience-area{text-align: center;}
+    .experience-area h2{text-align: center; font-size: 36px;}
+    .experience-area ul li{font-size: 14px; margin-left: 10px; text-align: left;}
+    .experience-area img {float: none; max-width: 70%; margin-top: 40px;}
+    .subscription-bg{padding: 130px 0;}
+    .subscription-bg h2{text-align: center; font-size: 36px;}
+    .subscription-bg form .contact-info{font-size: 18px; width: 70%; padding: 10px 0 10px 16px;}
+    .mail-box .btn-submit{position: unset;  font-size: 18px; margin: 20px 0;}
+    .social-icon ul{margin-bottom: 40px;}
+    footer h3{margin: 20px 0 10px;}
+    .copyright-area{margin: 30px 0 0; padding-top: 30px;}
+    .copyright-area p {text-align: center; font-size: 14px;}
+    .copyright-area img {width: 160px;}
+
+}
+
