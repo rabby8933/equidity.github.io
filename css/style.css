@@ -344,7 +344,7 @@ footer p{
     .hero-section{ text-align: center; padding: 140px 0;}
     .hero-section h1{font-size: 36px;}
     .hero-section form .hero-input{margin: 14px 0px 0px; width: 320px; padding: 10px 20px;}
-    .hero-section .btn-hero-submit{font-size: 16px; margin: 10px 0; padding: 10px 30px;}
+    .hero-section .btn-hero-submit{font-size: 16px; margin: 10px 0 0; padding: 10px 30px;}
     .feature-content img{width: 40%; margin: 40px 0 10px;}
     .feature-content h2{ font-size: 36; margin: 0 0 10px;}
     .experience-area{text-align: center;}
@@ -352,9 +352,9 @@ footer p{
     .experience-area ul li{font-size: 14px; margin-left: 10px; text-align: left;}
     .experience-area img {float: none; max-width: 70%; margin-top: 40px;}
     .subscription-bg{padding: 130px 0;}
-    .subscription-bg h2{text-align: center; font-size: 36px;}
+    .subscription-bg h2{text-align: center; font-size: 36px; margin-top: 20px;}
     .subscription-bg form .contact-info{font-size: 18px; width: 70%; padding: 10px 0 10px 16px;}
-    .mail-box .btn-submit{position: unset;  font-size: 18px; margin: 20px 0;}
+    .mail-box .btn-submit{position: unset;  font-size: 18px; margin: 20px 0 0;}
     .social-icon ul{margin-bottom: 40px;}
     footer h3{margin: 20px 0 10px;}
     .copyright-area{margin: 30px 0 0; padding-top: 30px;}
