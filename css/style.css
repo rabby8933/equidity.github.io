@@ -22,71 +22,76 @@ body{
 /************************ 
    Header section CSS
 *************************/
-.main-header{
-    padding: 30px 0;
-}
-.main-header img{
+.main-logo{
     width: 200px;
-    cursor: pointer;
 }
-.main-header ul{
-    display: flex;
-    margin-top: 16px;
-    padding: 0;
+.navbar{
+    padding: 20px 0;
 }
-.main-header ul li{
-    text-decoration: none;
-    margin-right: 60px;
-    list-style: none;
+.navbar-nav{
+    margin-left: 50px;
 }
-.main-header ul li a{
-    color: #717171;
+.nav-item{
+    margin: 0 10px;
+}
+.navbar-nav .nav-item .nav-link{
     font-size: 18px;
-    font-weight: 600;
-}
-.main-header ul li a:hover{
-    color: #924f35;
-    border-bottom: 2px solid #924f35;
-}
-.main-header button{
-    border: none;
-    font-size: 16px;
-    background-color: #924f35;
-    color: white;
-    margin-left: 20px;
-    padding: 12px 60px 12px 40px;
-    border-radius: 30px;
+    font-weight: 500;
+    padding: 0;
     transition: all 0.3s ease-in-out;
 }
-.main-header button:hover{
-    background-color: #b16a4e;
-    right: 30px;
-}
-.header-login{
-    position: relative;
-    text-align: right;
-}
-.main-header .header-search{
-    margin: 20px 0;
-    cursor: pointer;
-    border-right: 3px solid #717171;
-    padding-right: 16px;
-    transition: all .3s ease-in-out;
-}
-.main-header .header-search:hover{
+.navbar-nav .nav-item .nav-link:hover{
     color: #924f35;
-    border-color: #924f35;
+    border-bottom: 1px solid #924f35;
 }
-.main-header .login-arrow{
+.form-control::placeholder{
+    color: transparent;
+}
+.form-control{
+    background-color: transparent;
     cursor: pointer;
-    position: absolute;
-    top: 20px;
-    right: 40px;
+    width: 50px;
     color: white;
-    transition: all .3s ease-in-out;
+    border: none;
+    border-right: 2px solid #bebdbd;
+    border-radius: 0;
+    transition: all 0.3s ease-in-out;   
 }
-.main-header .login-arrow:hover{
+.form-control:focus::placeholder{
+    color: #3d3d3d;
+}
+.form-control:focus{
+    border-bottom: 2px solid #bebdbd;
+    color: #924f35;
+    width: 300px;
+    box-shadow: none;
+    border-color: #bebdbd;
+}
+.search{
+    position: relative;
+    margin-right: 30px;
+}
+.header-form .fa-magnifying-glass{
+    position: absolute;
     right: 30px;
+    top: 10px;
+    z-index: -1;
+}
+.btn-login{
+    background-color: #924f35;  
+    border: 2.5px solid #924f35;
+    font-size: 18px;
+    color: white;
+    padding: 8px 30px;
+    border-radius: 35px;
+    transition: all 0.3s ease-in-out;
+}
+.btn-login:hover {
+    background-color: transparent;
+    color: #924f35;
+}
+.fa-solid{
+    margin-left: 10px;
 }
 
 
@@ -131,7 +136,7 @@ body{
     Features-area CSS
 *************************/
 .features-area{
-    margin: 75px 0;
+    padding: 75px 0;
 }
 .feature-content{
     text-align: center;
@@ -220,16 +225,19 @@ body{
     position: absolute;
     border: none;
     font-size: 20px;
-    top: 10px;
+    border: 3px solid #924f35;
+    top: 11px;
     right: 0px;
+    font-weight: 500;
     background-color: #924f35;
     color: white;
-    padding: 10px 30px;
+    padding: 8px 30px;
     border-radius: 30px;
     transition: all 0.3s ease-in-out;
 }
 .mail-box .btn-submit:hover{
-    background-color: #b16a4e;
+    background-color: white;
+    color: #924f35;
 }
 
 
@@ -337,10 +345,15 @@ footer p{
 ************************/
 @media (min-width: 320px) and (max-width: 576px){
 
-    .main-header{padding: 40px 0 25px;}
-    .main-header img{width: 180px;}
-    .main-header ul{line-height: 20px; margin-top: -39px; margin-right: -58px; text-align: right; flex-direction: column;}
-    .main-header ul li a{font-size: 16px;}
+    .main-header{padding: 30px 0 20px;}
+    .collapse{margin-top: 20px; text-align: left;}
+    .navbar-collapse{text-align: left;  }
+    .navbar-nav{ margin-left: 0; padding: 10px 0 20px; text-align: left;}
+    .nav-item{margin: 5px 0;}
+    .nav-link{display: inline;}
+    .btn-login{margin-top: 20px;}
+    .form-control{width: 100%; border-bottom: 2px solid #bebdbd; color: #924f35; width: 300px; box-shadow: none; border-color: #bebdbd;}
+    .form-control::placeholder { color: #3d3d3d;}
     .hero-section{ text-align: center; padding: 140px 0;}
     .hero-section h1{font-size: 36px;}
     .hero-section form .hero-input{margin: 14px 0px 0px; width: 320px; padding: 10px 20px;}
